@@ -104,8 +104,8 @@
 				6FA493902AECEC0600C2C4ED /* TrackTableViewController.swift */,
 				6FA493962AED023F00C2C4ED /* MovieTableViewController.swift */,
 				6FA493922AECF41900C2C4ED /* DetailViewController.swift */,
-				6FA493942AED00EC00C2C4ED /* MovieTableViewCell.swift */,
 				6FA493982AED0A8E00C2C4ED /* MovieDetailViewController.swift */,
+				6FA493942AED00EC00C2C4ED /* MovieTableViewCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
