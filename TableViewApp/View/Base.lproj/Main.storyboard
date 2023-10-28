@@ -55,7 +55,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wiX-rz-gTg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2262" y="-449"/>
+            <point key="canvasLocation" x="2261.8320610687024" y="-449.29577464788736"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="s8g-FY-lb5">
@@ -150,7 +150,7 @@
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Genres:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6IY-5N-5EG">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Genre:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6IY-5N-5EG">
                                                             <rect key="frame" x="0.0" y="166.66666666666666" width="185" height="66.333333333333343"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
@@ -188,21 +188,100 @@
             </objects>
             <point key="canvasLocation" x="2261.8320610687024" y="464.78873239436621"/>
         </scene>
-        <!--View Controller-->
+        <!--Movie Detail View Controller-->
         <scene sceneID="QqU-lj-hnl">
             <objects>
-                <viewController id="wm2-dF-PDl" sceneMemberID="viewController">
+                <viewController id="wm2-dF-PDl" customClass="MovieDetailViewController" customModule="TableViewApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ikt-wB-cge">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="igk-P5-k4x">
+                                <rect key="frame" x="116" y="103" width="160" height="430"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="12 Angry Men (1957) - Action" translatesAutoresizingMaskIntoConstraints="NO" id="1Lh-xr-NBk">
+                                        <rect key="frame" x="0.0" y="0.0" width="160" height="268"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="160" id="PNj-sF-0qS"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Xc-kY-BKl">
+                                        <rect key="frame" x="0.0" y="277" width="160" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="160" id="Hh8-YN-hmm"/>
+                                            <constraint firstAttribute="height" constant="45" id="Nak-pL-VEH"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Year" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RnI-4N-zVA">
+                                        <rect key="frame" x="0.0" y="331" width="160" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="160" id="qKu-w4-8N9"/>
+                                            <constraint firstAttribute="height" constant="45" id="yKk-ke-ZZT"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Genre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E0F-SO-MHd">
+                                        <rect key="frame" x="0.0" y="385" width="160" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="160" id="05Z-XQ-CHH"/>
+                                            <constraint firstAttribute="height" constant="45" id="Div-6M-B7v"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W3Q-sI-ZGM">
+                                <rect key="frame" x="95" y="566" width="203" height="34.333333333333371"/>
+                                <color key="backgroundColor" red="1" green="0.52156862749999999" blue="0.31764705879999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Trailer"/>
+                                <connections>
+                                    <action selector="movieButtonTapped:" destination="wm2-dF-PDl" eventType="touchUpInside" id="i2y-J3-NBq"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R6T-eW-pKh">
+                                <rect key="frame" x="16" y="618" width="361" height="151"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="AFg-7A-2B6"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="AFg-7A-2B6" firstAttribute="trailing" secondItem="igk-P5-k4x" secondAttribute="trailing" constant="117" id="A0v-M2-FyH"/>
+                            <constraint firstItem="igk-P5-k4x" firstAttribute="leading" secondItem="AFg-7A-2B6" secondAttribute="leading" constant="116" id="M9Z-9j-De5"/>
+                            <constraint firstItem="AFg-7A-2B6" firstAttribute="trailing" secondItem="R6T-eW-pKh" secondAttribute="trailing" constant="16" id="Mem-0P-uej"/>
+                            <constraint firstItem="AFg-7A-2B6" firstAttribute="trailing" secondItem="W3Q-sI-ZGM" secondAttribute="trailing" constant="95" id="Sqf-r9-Vyv"/>
+                            <constraint firstItem="R6T-eW-pKh" firstAttribute="centerX" secondItem="ikt-wB-cge" secondAttribute="centerX" id="Uvf-jx-Q2h"/>
+                            <constraint firstItem="W3Q-sI-ZGM" firstAttribute="leading" secondItem="AFg-7A-2B6" secondAttribute="leading" constant="95" id="Xvw-zv-tRP"/>
+                            <constraint firstItem="R6T-eW-pKh" firstAttribute="bottom" secondItem="AFg-7A-2B6" secondAttribute="bottom" id="f51-rB-OXA"/>
+                            <constraint firstItem="R6T-eW-pKh" firstAttribute="leading" secondItem="AFg-7A-2B6" secondAttribute="leading" constant="16" id="itV-Ed-pWh"/>
+                            <constraint firstItem="igk-P5-k4x" firstAttribute="top" secondItem="AFg-7A-2B6" secondAttribute="top" id="pjE-Xw-2Re"/>
+                            <constraint firstItem="W3Q-sI-ZGM" firstAttribute="top" secondItem="igk-P5-k4x" secondAttribute="bottom" constant="33" id="seL-qf-Wly"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Cmw-1u-RJo"/>
+                    <connections>
+                        <outlet property="movieButton" destination="W3Q-sI-ZGM" id="sIV-jU-y55"/>
+                        <outlet property="movieDescriptionLabel" destination="R6T-eW-pKh" id="33H-wa-eMq"/>
+                        <outlet property="movieGanreLebel" destination="E0F-SO-MHd" id="bw4-XI-YwK"/>
+                        <outlet property="movieImageView" destination="1Lh-xr-NBk" id="enn-U5-son"/>
+                        <outlet property="movieTitleLabel" destination="2Xc-kY-BKl" id="0PT-Vj-HTh"/>
+                        <outlet property="movieYearLabel" destination="RnI-4N-zVA" id="bVU-zI-gS9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lCQ-ez-Ckc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3218" y="465"/>
+            <point key="canvasLocation" x="3217.5572519083967" y="464.78873239436621"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="1U1-w9-wZb">

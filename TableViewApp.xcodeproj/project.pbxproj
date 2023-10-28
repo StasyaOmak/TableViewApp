@@ -19,6 +19,7 @@
 		6FA493932AECF41900C2C4ED /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA493922AECF41900C2C4ED /* DetailViewController.swift */; };
 		6FA493952AED00EC00C2C4ED /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA493942AED00EC00C2C4ED /* MovieTableViewCell.swift */; };
 		6FA493972AED023F00C2C4ED /* MovieTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA493962AED023F00C2C4ED /* MovieTableViewController.swift */; };
+		6FA493992AED0A8E00C2C4ED /* MovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA493982AED0A8E00C2C4ED /* MovieDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		6FA493922AECF41900C2C4ED /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		6FA493942AED00EC00C2C4ED /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
 		6FA493962AED023F00C2C4ED /* MovieTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewController.swift; sourceTree = "<group>"; };
+		6FA493982AED0A8E00C2C4ED /* MovieDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,9 +102,10 @@
 			isa = PBXGroup;
 			children = (
 				6FA493902AECEC0600C2C4ED /* TrackTableViewController.swift */,
+				6FA493962AED023F00C2C4ED /* MovieTableViewController.swift */,
 				6FA493922AECF41900C2C4ED /* DetailViewController.swift */,
 				6FA493942AED00EC00C2C4ED /* MovieTableViewCell.swift */,
-				6FA493962AED023F00C2C4ED /* MovieTableViewController.swift */,
+				6FA493982AED0A8E00C2C4ED /* MovieDetailViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -194,6 +197,7 @@
 				6F974B9C2AEBEC1D00051413 /* AppDelegate.swift in Sources */,
 				6F974B9E2AEBEC1D00051413 /* SceneDelegate.swift in Sources */,
 				6FA493972AED023F00C2C4ED /* MovieTableViewController.swift in Sources */,
+				6FA493992AED0A8E00C2C4ED /* MovieDetailViewController.swift in Sources */,
 				6F974BB62AEBF07700051413 /* Song.swift in Sources */,
 				6FA493952AED00EC00C2C4ED /* MovieTableViewCell.swift in Sources */,
 				6FA493932AECF41900C2C4ED /* DetailViewController.swift in Sources */,
