@@ -66,6 +66,23 @@ class DataManager {
         "GIMS - Tout Donner",
     ]
     
+    var songClipUrls = [
+        "https://youtu.be/bbkEVJgrBUs?si=91abIe0TvYm5Ur8_",
+        "https://youtu.be/mY--4-vzY6E?si=zCieK1hrAHn7JuYw",
+        "https://youtu.be/eJO5HU_7_1w?si=z25r96mjbaZ6RGgF",
+        "https://youtu.be/lNKTWyU_0c4?si=ckhnrkVRtFvaW3oP",
+        "https://youtu.be/flSmiIne-4k?si=DPNR-gKP_ECtykLl",
+        "https://youtu.be/l9i-0AX5sdo?si=o2eadV3-n1luSqaG",
+        "https://youtu.be/tctc2fkqTwY?si=ONU97Y4YyPsVT24q",
+        "https://youtu.be/hgJ7dmr_ysU?si=hjN1nSBBTthP_Z6c",
+        "https://youtu.be/gxFPpAbLctk?si=5B1-zRZZ0a3Zi2b9",
+        "https://youtu.be/k-bvEyE5oMY?si=t6vtFF0RDum8ASwp",
+       "https://youtu.be/fPO76Jlnz6c?si=tqSNptg376NPSG61",
+        "https://youtu.be/zrFI2gJSuwA?si=5AP7e6B85QkgYRZR",
+        "https://youtu.be/iB-ao_cLGJM?si=00zbHGbHo8-NWeaI",
+        "https://youtu.be/9iRFjFGVtLw?si=p6Ou97nd6WkW9rMJ",
+        "https://youtu.be/-KRe61NpaTA"
+    ]
     
     
     #warning("Home task")

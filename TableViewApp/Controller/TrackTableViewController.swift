@@ -35,6 +35,8 @@ class TrackTableViewController: UITableViewController {
         cell.detailTextLabel?.text = song.album
         cell.imageView?.image = UIImage(named: song.cover)
         
+    
+        
         return cell
     }
     

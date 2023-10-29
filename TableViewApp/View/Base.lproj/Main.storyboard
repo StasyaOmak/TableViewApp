@@ -87,17 +87,38 @@
                                     </label>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CrJ-Fy-BKD">
+                                <rect key="frame" x="46" y="599" width="301" height="44"/>
+                                <color key="backgroundColor" red="0.39607840779999998" green="0.83137255909999996" blue="0.43137252329999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Clip">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="25"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="songClipTapped:" destination="xAG-BG-GoX" eventType="touchUpInside" id="8hw-Cf-kMw"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="wCz-tt-5eU"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Qx5-Un-DZS" firstAttribute="leading" secondItem="wCz-tt-5eU" secondAttribute="leading" constant="71" id="DHj-vh-KBe"/>
+                            <constraint firstItem="CrJ-Fy-BKD" firstAttribute="leading" secondItem="wCz-tt-5eU" secondAttribute="leading" constant="46" id="REd-zZ-31I"/>
                             <constraint firstItem="Qx5-Un-DZS" firstAttribute="top" secondItem="wCz-tt-5eU" secondAttribute="top" constant="52" id="aJM-SY-AmB"/>
+                            <constraint firstItem="CrJ-Fy-BKD" firstAttribute="top" secondItem="Qx5-Un-DZS" secondAttribute="bottom" constant="43" id="iVb-WI-ep5"/>
+                            <constraint firstItem="wCz-tt-5eU" firstAttribute="trailing" secondItem="CrJ-Fy-BKD" secondAttribute="trailing" constant="46" id="mIl-lJ-8sf"/>
                             <constraint firstItem="wCz-tt-5eU" firstAttribute="trailing" secondItem="Qx5-Un-DZS" secondAttribute="trailing" constant="72" id="obT-Sg-DHO"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" style="editor" id="AHN-lm-L6c"/>
                     <connections>
+                        <outlet property="songClipUrlLabel" destination="CrJ-Fy-BKD" id="3O9-Ix-e7G"/>
                         <outlet property="trackImageView" destination="HNL-XN-Mz7" id="TX5-Zx-pTA"/>
                         <outlet property="trackNameLabel" destination="aD1-Yp-8cA" id="cpX-Sb-jkX"/>
                     </connections>
@@ -308,14 +329,16 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W3Q-sI-ZGM">
-                                <rect key="frame" x="46.666666666666657" y="717.66666666666663" width="300" height="34.333333333333371"/>
+                                <rect key="frame" x="46.666666666666657" y="708" width="300" height="44"/>
                                 <color key="backgroundColor" red="0.39607840779999998" green="0.83137255909999996" blue="0.43137252329999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="LO5-eX-OJ9"/>
                                 </constraints>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Trailer"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Trailer">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="25"/>
+                                </buttonConfiguration>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="10"/>
@@ -326,7 +349,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="vtz-JF-CHb">
-                                <rect key="frame" x="16" y="459" width="361" height="199"/>
+                                <rect key="frame" x="16" y="449.33333333333326" width="361" height="199"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="199" id="0Fi-QB-zUx"/>
                                     <constraint firstAttribute="width" constant="361" id="bwA-L4-mo0"/>

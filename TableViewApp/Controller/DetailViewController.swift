@@ -8,10 +8,10 @@
 import UIKit
 
 class DetailViewController: UIViewController {
-
+    
     @IBOutlet weak var trackImageView: UIImageView!
     @IBOutlet weak var trackNameLabel: UILabel!
-    
+    @IBOutlet weak var songClipUrlLabel: UIButton!
     
     var song: Song?
     
@@ -21,6 +21,12 @@ class DetailViewController: UIViewController {
         if let mainSong = song {
             trackImageView.image = UIImage(named: mainSong.cover)
             trackNameLabel.text = mainSong.track +  "\n\n\(mainSong.album)"
+        }
+    }
+    
+    @IBAction func songClipTapped(_ sender: Any) {
+        if let songs = song, let url = URL(string: songs.songClipUrl) {
+            UIApplication.shared.open(url)
         }
     }
 }
