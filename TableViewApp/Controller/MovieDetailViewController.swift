@@ -18,6 +18,7 @@ class MovieDetailViewController: UIViewController {
     @IBOutlet weak var movieButton: UIButton!
     @IBOutlet weak var movieDescriptionLabel: UILabel!
     
+    @IBOutlet weak var delimiterLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()

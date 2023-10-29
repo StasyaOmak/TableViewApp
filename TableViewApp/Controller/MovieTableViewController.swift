@@ -35,6 +35,7 @@ class MovieTableViewController: UITableViewController {
         cell.genreLabel?.text = movie.genre
         cell.yearLabel?.text = String(movie.year)
         cell.movieImageView.image = UIImage(named: movie.poster)
+        cell.movieStarsLabel?.text = movie.movieStars
         
         return cell
     }

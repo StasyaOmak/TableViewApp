@@ -20,7 +20,7 @@ class DetailViewController: UIViewController {
         
         if let mainSong = song {
             trackImageView.image = UIImage(named: mainSong.cover)
-            trackNameLabel.text = mainSong.track +  "\n\(mainSong.album)"
+            trackNameLabel.text = mainSong.track +  "\n\n\(mainSong.album)"
         }
     }
 }

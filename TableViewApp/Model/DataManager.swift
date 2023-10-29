@@ -152,4 +152,18 @@ class DataManager {
         "https://www.imdb.com/video/vi684573465/?playlistId=tt0120737&ref_=tt_pr_ov_vi",
         "https://www.imdb.com/video/vi3877612057/?playlistId=tt0111161&ref_=tt_pr_ov_vi"
     ]
+    var movieStars = [
+        "8.7 / 10",
+        "8.4 / 10",
+        "9.3 / 10",
+        "5.8 / 10",
+        "8.3 / 10",
+        "7.6 / 10",
+        "8.4 / 10",
+        "7.4 / 10",
+        "8.8 / 10",
+        "9.0 / 10",
+        "9.3 / 10"
+    ]
+    
 }

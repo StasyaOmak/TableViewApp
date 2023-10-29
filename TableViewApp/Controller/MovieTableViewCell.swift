@@ -14,6 +14,10 @@ class MovieTableViewCell: UITableViewCell {
     @IBOutlet weak var yearLabel: UILabel!
     @IBOutlet weak var genreLabel: UILabel!
     
+    @IBOutlet weak var delimiterLabel: UILabel!
+    
+    @IBOutlet weak var movieStarsLabel: UILabel!
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
