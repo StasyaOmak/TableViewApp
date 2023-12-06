@@ -32,5 +32,6 @@ The following features have been implemented in TableViewApp:
 
 
 ## Screenshots
+
 ![Simulator Screen Recording - iPhone 15 Pro - 2023-10-30 at 15 28 11 (2)](https://github.com/StasyaOmak/TableViewApp/assets/127408467/84fe90fc-4dc7-400a-8ba3-d293104fea5e)
 
